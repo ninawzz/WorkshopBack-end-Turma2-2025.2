@@ -13,4 +13,4 @@ resultado = somar(10, 5)
 print(resultado)
 
 # ERRO -> TypeError
-# O erro foi causado porque não é possivel somar int com string
+# O erro foi causado porque não é possivel somar int com string 

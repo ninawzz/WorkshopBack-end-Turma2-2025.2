@@ -5,7 +5,7 @@
 
 # ERRO: IndexError
 # O erro foi causado porque o usuario tentou acessar um indice não existente
-
+ 
 # Codigo Corrigido:
 try:
     numeros = [10, 20, 30]

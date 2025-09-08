@@ -7,5 +7,5 @@ print(nome)
 
 
 # Erro -> NameError
-# o erro foi causado porque tentou usar uma váriavel não definida
+# o erro foi causado porque tentou usar uma váriavel não definida 
     
