@@ -69,3 +69,4 @@ static_root/ # If you are collecting static files to a specific root
 
 # Windows-specific files
 Thumbs.db
+

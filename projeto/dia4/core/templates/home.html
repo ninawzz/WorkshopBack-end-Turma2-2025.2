@@ -1,0 +1,23 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de CEP</title>
+</head>
+<body>
+    <h1>Consultar Endereço pelo CEP</h1>
+
+    <form method="get" action="{% url 'consulta_cep' %}">
+        <label for="id_cep">CEP</label>
+        <input type="text" name="cep" placeholder="Digite o cep" maxlength="20" required id="id_cep">
+
+        {{ form.as_p }}
+        <button type="submit">Consultar</button>
+    </form>
+
+    {% if form.errors %}
+        <p style="color: red;">Por favor, insira um CEP válido.</p>
+    {% endif %}
+</body>
+</html>

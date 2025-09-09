@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',  include('fabrica.urls')),
+    path('admin/', admin.site.urls), # Tela de admin
+    path('',  include('fabrica.urls')), # Tela inicial
+    path('app2/', include('app2.urls')),
 ]
