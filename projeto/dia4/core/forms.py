@@ -1,13 +1,13 @@
 from django import forms
-from .models import Endereco
+from .models import ViaCep
 
-class EnderecoForm(forms.ModelForm):
+class ViaCepForm(forms.ModelForm):
     class Meta:
-        model = Endereco
+        model = ViaCep
         fields = ['cep']
-        labels = {
-            'cep': 'CEP'
-        }
         widgets = {
-            'cep': forms.TextInput(attrs={'placeholder': 'Digite o cep'})
+            'cep': forms.TextInput(attrs={'placeholder': 'Digite o CEP', 'class': 'form-control'}),
+        }
+        labels = {
+            'cep': 'CEP',
         }
